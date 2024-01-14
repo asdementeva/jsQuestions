@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #quiz-container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        #question {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        #options {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Simple Quiz App</title>
+</head>
+<body>
+    <div id="quiz-container">
+        <a href="index.html">Информация по темам</a><br><br>
+        <label for="theme">Выберите тему:</label><br><br>
+        <!-- Добавьте id="theme" к вашему элементу select -->
+<select id="theme" onchange="selectTheme()">
+  <option value="0">Основы ООП</option>
+  <option value="1">Week1, Module "Chrome Dev Tools, VS Code, Terminal"</option>
+  <option value="2">Наука</option>
+  <!-- Добавьте больше тем, как это нужно -->
+</select>
+<br><br>
+
+        <div id="question"></div>
+        <div id="options"></div><br><br>
+        <button onclick="nextQuestion()">Следующий вопрос</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
