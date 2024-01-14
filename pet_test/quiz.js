@@ -170,7 +170,6 @@
             // Добавьте больше тем, как это нужно
         ];
 
-
         let currentThemeIndex = 0;
         let currentQuestionIndex = 0;
 
@@ -184,13 +183,13 @@
             const questionElement = document.getElementById('question');
             const optionsContainer = document.getElementById('options');
 
-            // Генерация случайного индекса вопроса
-            const randomIndex = Math.floor(Math.random() * themes[currentThemeIndex].questions.length);
+            // Accessing the current question based on the currentQuestionIndex
+            const currentQuestion = themes[currentThemeIndex].questions[currentQuestionIndex];
 
-            questionElement.textContent = themes[currentThemeIndex].questions[randomIndex].question;
+            questionElement.textContent = currentQuestion.question;
 
             optionsContainer.innerHTML = "";
-            themes[currentThemeIndex].questions[randomIndex].options.forEach((option, index) => {
+            currentQuestion.options.forEach((option, index) => {
                 const button = document.createElement('button');
                 button.textContent = option;
                 button.onclick = () => checkAnswer(option);
@@ -205,11 +204,10 @@
         }
 
         function nextQuestion() {
-            // Генерация случайного индекса вопроса
-            const randomIndex = Math.floor(Math.random() * themes[currentThemeIndex].questions.length);
-
-            currentQuestionIndex = randomIndex;
-
+            currentQuestionIndex++;
+            if (currentQuestionIndex >= themes[currentThemeIndex].questions.length) {
+                currentQuestionIndex = 0;
+            }
             loadQuestion();
         }
 
