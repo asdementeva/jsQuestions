@@ -148,6 +148,126 @@
         "Интранеты и экстранеты - синонимы, используются для общения внутри компании."],
         correctAnswer: "Интранеты - внутренние сети компаний, экстранеты - внешние сети компаний, обе используют Интернет для коммуникации."
     },
+    {
+      question: "Как изменить текущую директорию в командной строке?",
+      options: ["RD",
+      "MD",
+      "CD",
+      "DIR"],
+      correctAnswer: "CD"
+    },
+    {
+      question: "Как перейти к корневой директории диска в командной строке?",
+      options: ["CD\\",
+      "RD\\",
+      "MD\\",
+      "DIR\\"],
+      correctAnswer: "CD\\"
+    },
+    {
+      question: "Как навигироваться к конкретной папке в командной строке?",
+      options: ["CD path",
+      "RD path",
+      "MD path",
+      "DIR path"],
+      correctAnswer: "CD path"
+    },
+    {
+      question: "Как изменить родительскую директорию в командной строке?",
+      options: ["RD..",
+      "MD..",
+      "CD..",
+      "DIR.."],
+      correctAnswer: "CD.."
+    },
+    {
+      question: "Как изменить директорию в командной строке на рабочий стол или другую пользовательскую папку?",
+      options: ["CD Desktop",
+      "CD Documents",
+      "CD %userprofile%\\Desktop",
+      "CD %userprofile%\\Documents"],
+      correctAnswer: "CD %userprofile%\\Desktop"
+    },
+    {
+      question: "Как изменить диск в командной строке с использованием команды для смены диска?",
+      options: ["CD D:",
+      "RD D:",
+      "MD D:",
+      "DIR D:"],
+      correctAnswer: "CD D:"
+    },
+    {
+      question: "Как просмотреть содержимое директории в командной строке?",
+      options: ["RD",
+      "MD",
+      "DIR",
+      "CD"],
+      correctAnswer: "DIR"
+    },
+    {
+      question: "Как создать новую директорию с помощью командной строки?",
+      options: ["RD Folder",
+      "CD Folder",
+      "MD Folder",
+      "DIR Folder"],
+      correctAnswer: "MD Folder"
+    },
+    {
+      question: "Как переименовать файлы и папки в командной строке?",
+      options: ["RENAME",
+      "REN",
+      "RD",
+      "MD"],
+      correctAnswer: "REN"
+    },
+    {
+      question: "Как скопировать файлы в командной строке?",
+      options: ["COPY",
+      "MOVE",
+      "XCOPY",
+      "DEL"],
+      correctAnswer: "COPY"
+    },
+    {
+      question: "Как скопировать папки в командной строке вместе с их содержимым?",
+      options: ["COPY",
+      "MOVE",
+      "XCOPY",
+      "DEL"],
+      correctAnswer: "XCOPY"
+    },
+    {
+      question: "Как удалить файлы из директории в командной строке?",
+      options: ["DELETE",
+      "REMOVE",
+      "DEL",
+      "ERASE"],
+      correctAnswer: "DEL"
+    },
+    {
+      question: "Как удалить пустую папку в командной строке?",
+      options: ["DELETE",
+      "REMOVE",
+      "RD",
+      "ERASE"],
+      correctAnswer: "RD"
+    },
+    {
+      question: "Как запустить приложение из командной строки в Windows?",
+      options: ["RUN",
+      "START",
+      "OPEN",
+      "LAUNCH"],
+      correctAnswer: "START"
+    },
+    {
+      question: "Как получить справку в командной строке?",
+      options: ["INFO",
+      "HELP",
+      "ABOUT",
+      "MANUAL"],
+      correctAnswer: "HELP"
+    },
                     // Добавьте больше вопросов, как это нужно
                 ]
             },
