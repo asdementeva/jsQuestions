@@ -272,21 +272,104 @@
                 ]
             },
             {
-                topic: "Наука",
+                topic: 'Week1, Module "Getting to know version control system Git"',
                 questions: [
                     {
-                        question: "What is the chemical symbol for water?",
-                        options: ["H2O", "CO2", "O2", "NaCl"],
-                        correctAnswer: "H2O"
+                        question: "Какие символы используются для создания уровней заголовков в статье на GitHub, и какой синтаксис для этого используется?",
+                        options: ["+ и -",
+                        "# и ##",
+                        "* и **"],
+                        correctAnswer: " # и ##"
                     },
                     {
-                        question: "Which gas do plants absorb from the atmosphere?",
-                        options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
-                        correctAnswer: "Carbon Dioxide"
+                        question: "Как цитировать текст в статье на GitHub, и как это визуально отображается?",
+                        options: ['[quote] и "цитата"',
+                        " > и отступ",
+                        "<< и >>"],
+                        correctAnswer: "> и отступ"
                     },
+                    {
+                      question: "Как выделять и форматировать код или команды в статье на GitHub?",
+                      options: ["`код` и `блок кода`",
+                      "[code] и {код}",
+                      `"код" и '''блок кода'''`],
+                      correctAnswer: "`код` и `блок кода`"
+                  },
+                  {
+                    question: "Как создавать ссылки в статье на GitHub, в том числе на внутренние и внешние ресурсы?",
+                    options: ["#color и rgb(255, 0, 0)",
+                    "`#color` и `rgb(255, 0, 0)`",
+                    `color: # и color: rgb(255, 0, 0)`],
+                    correctAnswer: "`#color` и `rgb(255, 0, 0)`"
+                  },
+                  {
+                    question: "Как создавать и управлять списками в статье, включая неупорядоченные, упорядоченные и вложенные списки?",
+                    options: ["- и 1. для неупорядоченных и упорядоченных списков",
+                    "*, + и 1. для неупорядоченных и упорядоченных списков",
+                    `> и >> для неупорядоченных и упорядоченных списков`],
+                    correctAnswer: "*, + и 1. для неупорядоченных и упорядоченных списков"
+                  },
+                  {
+                    question: "Как создавать и использовать задачи в статье, и как отмечать их как выполненные?",
+                    options: ["[x] и [ ]",
+                    " - [x] и - [ ]",
+                    ` + [x] и + [ ]`],
+                    correctAnswer: "[x] и [ ]"
+                  },
+                  {
+                    question: "Как упоминать людей и команды в статье на GitHub, и как это влияет на уведомления и коммуникацию?",
+                    options: ["@username и @organization/team",
+                    "#username и #organization/team",
+                    ` !username и !organization/team`],
+                    correctAnswer: "@username и @organization/team"
+                  },
+                  {
+                    question: "Как ссылаться на проблемы (issues) и запросы на вытягивание (pull requests) в статье, и как это облегчает взаимодействие с репозиторием?",
+                    options: ["#123 и #PR456",
+                    "[issue#123] и [pr#456]",
+                    `@123 и @PR456`],
+                    correctAnswer: "#123 и #PR456"
+                  },
+                  {
+                    question: "Как использовать алерты в статье для выделения важной информации, и какие типы алертов доступны?",
+                    options: [" > [!ALERT] и > [!IMPORTANT]",
+                    "> [!NOTE] и > [!WARNING]",
+                    ` > [!TIP] и > [!CAUTION]`],
+                    correctAnswer: "> [!NOTE] и > [!WARNING]"
+                  },
+                  {
+                    question: "Как отключать рендеринг Markdown для просмотра исходного кода файла на GitHub?",
+                    options: ["Code и Disable Markdown Rendering",
+                    "View и Toggle Markdown",
+                    `Render и Source`],
+                    correctAnswer: "Code и Disable Markdown Rendering"
+                  },
+                  {
+                    question: "Как использовать эмодзи в тексте статьи, и какие существуют коды для различных эмодзи?",
+                    options: [":emoji: и смайлики",
+                    "[emoji] и (смайлики)",
+                    ` -emoji- и {смайлики}`],
+                    correctAnswer: ":emoji: и смайлики"
+                  },
                     // Добавьте больше вопросов, как это нужно
                 ]
             },
+            {
+              topic: "Наука",
+              questions: [
+                  {
+                      question: "What is the chemical symbol for water?",
+                      options: ["H2O", "CO2", "O2", "NaCl"],
+                      correctAnswer: "H2O"
+                  },
+                  {
+                      question: "Which gas do plants absorb from the atmosphere?",
+                      options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+                      correctAnswer: "Carbon Dioxide"
+                  },
+                  // Добавьте больше вопросов, как это нужно
+              ]
+          },
             // Добавьте больше тем, как это нужно
         ];
 
